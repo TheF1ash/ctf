@@ -1,0 +1,22 @@
+I enjoyed this challenge. In this one, we are given a python code for a server which generates random slot values and checks if user is 'lucky'.
+
+However, after a lot of analysis and print statements, I realised that everytime, win = 0. This is because of the following lines:
+	while payout(line2):
+				line2 = line()
+This will continue to check if there is a payout in line2, and if yes, it will reset line2. Therefore, when it comes out of the loop, we will essentially have payout for line2 as 0 everytime.
+
+Therefore on the next line, 
+	win = bet * payout(line2) will always be 0.
+And thus, on the next line,
+	money += win - bet
+	will be money += -bet
+
+Therefore, I thought that there must be some way I can bypass the negative condition check for bet, so that everytime it gets added
+However, I tried researching and couldnt find any such case where I can cause an 'overflow' in float for python.
+
+Then I decided to concentrate more on the float function in Python, and referred the Python documentation, which essentially was the ultimate hint: the float() function converts a string or number to a floating point number, and the input can be a number or a 'nan' or 'inf'. 
+I tried giving nan as the input, and it just gave me the flag. I initially didnt understand why it worked, but after running through the code again I got it, it worked because giving nan will make the bet as nan, which will be interpreted as correctly as nan by float() function, and basically it will not pass any of the conditional checks as it is not a valid number. Therefore, it will bypass all conditional checks including the ones which check that bet > 0 and whether bet <= 0.
+Also, when it is added to money, money will also become nan.
+So money will also bypass checks like money <= 0 or money < 1000000000 and then in the final condition, it prints out the flag.
+
+Flag: actf{fruity}

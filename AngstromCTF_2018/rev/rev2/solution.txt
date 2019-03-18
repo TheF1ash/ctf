@@ -1,0 +1,13 @@
+I used gdb's disass (can also use objdump -d) to view the assembly code for main.
+There I noticed that there are two parts of this question: level1 and level2.
+
+Also, the first input was being compared to 0x11d7 which is 4567 in hex.
+
+So I entered that into level1, and it asked the second question, about level2.
+This time it asks for 2 numbers which should be two-digit. Looking through the assembly code I again see that the numbers entered are checked that they are greater than 9 and less than or equal to 99, only then it accepts the input. Also, in one of the lines I noticed imul of the two numbers(multiplication).
+Also, the result is being compared to 0xd67 = 3431. Therefore I thought this means the two numbers' product must be 3431. I found the prime factorization of 3431 online and it was 47 * 73.
+
+Therefore I entered 47 73 as my second input. And that gave me the flag.
+
+Flag: actf{4567_47_73}
+

@@ -1,0 +1,4 @@
+I used Hopper Disassembler, and found the password for the program. And that gives the flag:
+actf{r3v_is_just_gettin_started!}
+
+However, I checked after solving this, that we can also run 'strings' on the file and we can find the password from there itself.

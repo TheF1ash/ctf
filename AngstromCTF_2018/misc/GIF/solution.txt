@@ -1,0 +1,7 @@
+The first thing I did was to run 'file' on the file. It told me it was a PNG image, not a gif. Therefore, I changed the filename to jiggs.png and tried to see if the image contained the flag. It didnt.
+
+Then, I ran 'strings' on the file, but in doing that I found that there is some extra data in the image, which indicated that it might have more files.
+
+Then I ran foremost on the image. It extracted a lot of images, and going through them one by one, I came across the flag.
+
+Flag: actf{thats_not_how_you_make_gifs}

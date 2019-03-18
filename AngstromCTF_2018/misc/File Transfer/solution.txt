@@ -1,0 +1,11 @@
+My process of thinking, followed by the flag:
+
+Since this is a PCAP, I opened it with Wireshark and started analysing. I noticed that in one of the packets, there is JFIF image data which is being downloaded. 
+Then I remembered to run a 'strings' on the pcap and check for the flag. However, it didnt work. Therefore, I continued to look for the flag in the packet data in wireshark. 
+I couldnt find the flag in the packet data, and thats when I thought to extract the image data into an image, so I did that, and lo, there was the flag.
+
+Lesson learned: 
+Sometimes, extracting images/attachments from packet captures can be useful.
+
+Flag: 
+actf{0ver_th3_w1re}

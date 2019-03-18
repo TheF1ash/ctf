@@ -1,0 +1,9 @@
+Initially I just played around with the app. I submitted the inputs and then on the results page, I saw there was a link to the source code. 
+In the source code, I saw that it was Flask(Jinja2).
+
+Since I had seen some challenges with Flask where we need to use Server-Side Template Injection, I again looked up for Flask injection, the website https://nvisium.com/blog/2016/03/09/exploring-ssti-in-flask-jinja2/ was really helpful,
+
+I found that the Author field had SSTI using the payload {{7*7}} which gave me 49 in the result page. I also found that the flag which is stored in the secret_key property of the application object, is actually a part of Config object, from the Flask documentation. 
+Therefore, I just entered a payload of {{config}} and got the config object printed out in the Author field.
+
+The flag: actf{wow_ur_a_jinja_ninja}

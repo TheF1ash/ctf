@@ -1,0 +1,30 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Mar 17 19:33:28 2019
+Invocation: foremost jiggs.png 
+Output directory: /home/rujool/Documents/ctf/AngstromCTF_2018/misc/GIF/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: jiggs.png
+Start: Sun Mar 17 19:33:28 2019
+Length: 1 MB (1117968 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	     144 KB 	          0 	  (500 x 323)
+1:	00000289.png 	     141 KB 	     148050 	  (500 x 323)
+2:	00000571.png 	     145 KB 	     292577 	  (500 x 323)
+3:	00000862.png 	     136 KB 	     441489 	  (500 x 323)
+4:	00001136.png 	     140 KB 	     581765 	  (500 x 323)
+5:	00001416.png 	     128 KB 	     725461 	  (500 x 323)
+6:	00001674.png 	     127 KB 	     857131 	  (500 x 323)
+7:	00001929.png 	     127 KB 	     987856 	  (500 x 323)
+Finish: Sun Mar 17 19:33:28 2019
+
+8 FILES EXTRACTED
+	
+png:= 8
+------------------------------------------------------------------
+
+Foremost finished at Sun Mar 17 19:33:28 2019

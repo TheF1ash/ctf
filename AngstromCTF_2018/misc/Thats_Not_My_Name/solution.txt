@@ -1,0 +1,8 @@
+I first ran the 'file' command on the given file. It was definitely not a pdf document, as the file was a 'Microsoft OOXML document'. I searched online for how to open 'Microsoft OOXML Document' but initially I missed the relevant information.
+Next I decided to look into the file data using 'xxd'. I found that it started with 'PK'. So I decided that it might be a zip file, so I renamed it to 'gettysburg.zip', and extracted the files. I went through each file and in document.xml, I found that there were fields which formed the flag.
+However, I thought that there must be an easier way to extract the flag, and I continued searching. Then I came across a site which mentioned that OOXML is the default format for docx,xlsx and pptx. I then tried to open that file with LibreOffice Writer, and it opened, and there was the flag in front of me!
+
+Lessons learned:
+Microsoft OOXML is the official format of files like docx, pptx, xlsx
+
+Flag: actf{thanks_mr_lincoln_but_who_even_uses_word_anymore}
