@@ -1,6 +1,7 @@
 
 My writeup for 'The Climb' from Crypto:
-```On analyzing the code using the sample plaintext and given key we see that the encryption takes place in the following steps:
+```
+On analyzing the code using the sample plaintext and given key we see that the encryption takes place in the following steps:
 1. Get the square root of the length of the key (9 here), say key_matrix_size = 3 and construct a square matrix of that size 
 2. In the square matrix, going row-wise, add the numerical equivalent ('a'=0, 'b'=1 and so on) of the key character starting from the 1st character.
     So for the key 'gybnqkurp', the key matrix will be
