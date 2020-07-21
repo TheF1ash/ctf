@@ -34,7 +34,7 @@ On analyzing the code using the sample plaintext and given key we see that the e
     <code>c<sub>3</sub> = (p<sub>1</sub> * k<sub>7</sub> + p<sub>2</sub> * k<sub>8</sub> + p<sub>3</sub> * k<sub>9</sub>) % 26</code><br/>
 
 4. Based on this I tried to see whether we can decrypt the ciphertext one block at at time, but I didnt know that the key in the code was the actual key to be used, I thought we had to find the key, but the challenge admin clarified that the actual key was the same one that was in the code. After that it was simple, we had to solve the system of congruences in 3 variables for each ciphertext block of size 3. I found that this can be done in dcode.fr.
-So our first set of congruences to solve becomes
+So our first set of congruences to solve becomes <br/>
     <code> (p<sub>1</sub> * k<sub>1</sub> + p<sub>2</sub> * k<sub>2</sub> + p<sub>3</sub> * k<sub>3</sub>) = 11 mod 26</code> <br/>
     <code> (p<sub>1</sub> * k<sub>4</sub> + p<sub>2</sub> * k<sub>5</sub> + p<sub>3</sub> * k<sub>6</sub>) = 17 mod 26</code> <br/>
     <code> (p<sub>1</sub> * k<sub>7</sub> + p<sub>2</sub> * k<sub>8</sub> + p<sub>3</sub> * k<sub>9</sub>) = 25 mod 26</code><br/>
