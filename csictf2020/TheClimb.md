@@ -38,7 +38,7 @@ So our first set of congruences to solve becomes <br/>
     <code> (p<sub>1</sub> * 6 + p<sub>2</sub> * 24 + p<sub>3</sub>) = 11 mod 26</code> <br/>
     <code> (p<sub>1</sub> * 13 + p<sub>2</sub> * 16 + p<sub>3</sub> * 10) = 17 mod 26</code> <br/>
     <code> (p<sub>1</sub> * 20 + p<sub>2</sub> * 17 + p<sub>3</sub> * 15) = 25 mod 26</code><br/>
-Solving this using dcode.fr we get p<sub>1</sub> = 'h', p<sub>2</sub> = 'i', p<sub>3</sub> = 'l'
+Solving this using dcode.fr we get p<sub>1</sub> = 'h', p<sub>2</sub> = 'i', p<sub>3</sub> = 'l' <br/>
 And continuing like this we get the plaintext which is `hillshaveeyes` <br/>
 So the flag is **csictf{hillshaveeyes}**
 ```
