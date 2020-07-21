@@ -29,6 +29,6 @@ So our first set of congruences to solve becomes
     (p1 * 13 + p2 * 16 + p3 * 10) = 17 mod 26 ('r')
     (p1 * 20 + p2 * 17 + p3 * 15) = 25 mod 26 ('z')
 Solving this using dcode.fr we get p1 = 'h', p2 = 'i', p3 = 'l'
-And continuing like this we get the plaintext which is || hillshaveeyes ||
+And continuing like this we get the plaintext which is hillshaveeyes
 So the flag is csictf{hillshaveeyes}
 ```
